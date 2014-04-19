@@ -1,11 +1,5 @@
-# Example
-
-This example can be found in [examples/simple-function](/saucy/expose-js/examples/simple-function).
-
-### app.js
-```javascript
 const express = require("express")
-    , expose  = require("expose-js")
+    , expose  = require(__dirname + "/../../expose.js")
 		, fs      = require("fs");
 
 var clickCount = 0;
@@ -31,25 +25,3 @@ app.use(function(req, res) {
 });
 
 app.listen(3000);
-```
-
-### app.html
-```html
-<button id="btn">Click me</button>
-<script src="/server.js"></script>
-<script>
-(function() {
-	var btn = document.getElementById("btn");
-	btn.onclick = function(e) {
-		if(btn.disabled) return;
-		btn.disabled = true;
-		
-		server.getMessage(function(msg) {
-			btn.textContent = msg;
-			btn.disabled = false;
-		});
-	};
-	
-}());
-</script>
-```

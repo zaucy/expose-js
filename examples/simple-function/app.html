@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ExposeJS Example -- Simple Function</title>
+	</head>
+	<body>
+		<button id="btn">Click me</button>
+		<script src="/server.js"></script>
+		<script>
+		(function() {
+			var btn = document.getElementById("btn");
+			btn.onclick = function(e) {
+				if(btn.disabled) return;
+				btn.disabled = true;
+				
+				server.getMessage(function(msg) {
+					btn.textContent = msg;
+					btn.disabled = false;
+				});
+			};
+			
+		}());
+		</script>
+	</body>
+</html>
