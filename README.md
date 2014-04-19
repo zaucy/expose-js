@@ -1,12 +1,12 @@
 # Example
 
-This example can be found in [examples/simple-function](/saucy/expose-js/examples/simple-function).
+This example can be found in [examples/simple-function](/saucy/expose-js/tree/master/examples/simple-function).
 
 ### app.js
 ```javascript
 const express = require("express")
     , expose  = require("expose-js")
-		, fs      = require("fs");
+    , fs      = require("fs");
 
 var clickCount = 0;
 
