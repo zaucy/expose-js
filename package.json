@@ -1,0 +1,18 @@
+{
+	"name": "expose-js",
+	"version": "0.0.1",
+	"description": "Expose JavaScript functions, and objects to the browser.",
+	
+	"main": "expose.js",
+	
+	"repository": {
+		"type": "git",
+		"url": "http://github.com/saucy/expose-js.git"
+	},
+	
+	"bugs": {
+		"url": "http://github.com/saucy/expose-js/issues"
+	},
+	
+	"license": "MIT"
+}
