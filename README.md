@@ -1,6 +1,6 @@
 # Example
 
-This example can be found in [examples/simple-function](/saucy/expose-js/tree/master/examples/simple-function).
+This example can be found in [examples/simple-function](https://github.com/saucy/expose-js/tree/master/examples/simple-function).
 
 ### app.js
 ```javascript
