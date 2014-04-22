@@ -18,8 +18,8 @@ var app = express();
 
 // use expose to handle exposed function calls and object getters/setters
 app.use(expose);
-// serve expose script to enable us to use "getMessage" in the browser
-app.get("/server.js", expose.script("window.server ? window.server : (window.server={})"));
+// serve expose script to allow us to use exposed functions and objects
+app.get("/server.js", expose.script("server"));
 // serve app.html
 app.get("/", function(req, res) {
 	res.writeHead(200, {"Content-Type": "text/html"});

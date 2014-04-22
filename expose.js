@@ -22,6 +22,8 @@ Exposer.prototype.getScript = function(exportName) {
 };
 
 function exposeScript(exposer, exportName) {
+	exportName = exportName ? "(window."+exportName+" ? window."+exportName+" : (window."+exportName+"={}))" : "window";
+	
 	return function(req, res, next) {
 		res.writeHead(200, {
 			"Content-Type": "application/javascript"
