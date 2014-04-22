@@ -1,7 +1,7 @@
 {
 	"name": "expose-js",
 	"version": "0.0.1",
-	"description": "Expose JavaScript functions, and objects to the browser.",
+	"description": "Expose JavaScript functions, and objects on server to the browser.",
 	
 	"main": "expose.js",
 	
